@@ -43,7 +43,7 @@ console.log('total',total)
   },[])
   return (
     <MainContainer>
-        <MainHeading>shopping application</MainHeading>
+        <MainHeading>Shopping Application</MainHeading>
 
       
 

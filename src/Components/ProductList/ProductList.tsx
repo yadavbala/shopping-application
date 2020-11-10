@@ -8,7 +8,7 @@ interface Props{
     updateCart?:(ele:IproductInfo)=>void
 }
 
-const ProductListContainer=styled.div`
+export const ProductListContainer=styled.div`
    display:flex;
   align-content:flex-start;
   flex-wrap:wrap;
@@ -19,7 +19,7 @@ export const ProductList:React.FC<Props>=(props:Props)=>{
          {
              props.list?.map(prod=>{
                 return(
-                    <Products key={prod.id} id={prod.id} name={prod.name} price={prod.price} quantity={prod.quantity} rating={prod.rating} updateCart={props.updateCart}>
+                    <Products key={prod.id} id={prod.id} name={prod.name} price={prod.price} quantity={prod.quantity} rating={prod.rating} updateCart={props.updateCart&&props.updateCart}>
                             {prod.description&&prod.description}
                     </Products>
                 )

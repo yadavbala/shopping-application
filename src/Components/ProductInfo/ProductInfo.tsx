@@ -67,7 +67,7 @@ export const ProductInfo:IproductInfo[]=[
         rating:1
     },
     {
-        id:7,
+        id:8,
         name:'sharpner',
         price:10,
         description:'this is sharpner',
